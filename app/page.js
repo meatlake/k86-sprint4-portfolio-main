@@ -1,11 +1,12 @@
 "use client";
 import Link from "next/link";
 import BeginButton from "./components/BeginButton";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="absolute top-0 left-0 flex flex-col justify-center px-5 items-center w-screen h-screen bg-bg-image bg-cover bg-no-repeat">
-      <div className="p-12 backdrop-blur-xl rounded-xl border border-2">
+    <div className="fixed top-0 left-0 flex flex-col justify-center px-5 items-center w-screen h-screen bg-bg-image bg-cover bg-no-repeat">
+      {/* <div className="p-12 backdrop-blur-xl rounded-xl border border-2">
         <h1 className="lg:text-5xl text-3xl font-display text-white font-semibold">
           Welkom bij onze quiz
         </h1>
@@ -24,14 +25,21 @@ export default function Home() {
             Julian
           </li>
         </ul>
+      </div> */}
+      <div className="fixed h-screen w-screen">
+        <div className="absolute top-[400px] left-[650px]">
+          <Image src="/blobs/blobBlue.png" width="120" height="120" />
+        </div>
       </div>
-      <BeginButton />
-      <Link
-        href="/slider"
-        className="mt-4 text-2xl min-w-[250px] text-center text-white font-semibold border-2 rounded-lg px-4 py-2 hover:bg-white hover:text-blue-600 hover:border-white transition-all duration-200 ease-in-out"
-      >
-        Slider
-      </Link>
+      <div className="mt-[500px] flex flex-col">
+        <BeginButton />
+        <Link
+          href="/slider"
+          className="mt-4 text-2xl min-w-[250px] text-center text-black bg-white font-semibold rounded-lg px-4 py-2 hover:bg-black hover:text-white transition-all duration-200 ease-in-out"
+        >
+          Slider
+        </Link>
+      </div>
     </div>
   );
 }
