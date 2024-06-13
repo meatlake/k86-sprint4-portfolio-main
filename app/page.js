@@ -26,7 +26,12 @@ export default function Home() {
         </ul>
       </div>
       <BeginButton />
-      <Link href="/slider">Slider</Link>
+      <Link
+        href="/slider"
+        className="mt-4 text-2xl min-w-[250px] text-center text-white font-semibold border-2 rounded-lg px-4 py-2 hover:bg-white hover:text-blue-600 hover:border-white transition-all duration-200 ease-in-out"
+      >
+        Slider
+      </Link>
     </div>
   );
 }
