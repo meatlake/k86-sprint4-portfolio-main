@@ -2,6 +2,7 @@
 import Link from "next/link";
 import BeginButton from "./components/BeginButton";
 import Image from "next/image";
+import { categories } from "./categories";
 
 export default function Home() {
   return (
@@ -26,12 +27,33 @@ export default function Home() {
           </li>
         </ul>
       </div> */}
-      <div className="fixed h-screen w-screen">
-        <div className="absolute top-[400px] left-[650px]">
+      <div className="fixed h-screen w-screen flex gap-6 justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
           <Image src="/blobs/blobBlue.png" width="120" height="120" />
+          <button className="px-4 py-2 bg-white border-2 border-black rounded-full -mt-4 font-bold">
+            {categories[1].category} &rarr;
+          </button>
+        </div>
+        <div className="flex flex-col  items-center">
+          <Image src="/blobs/blobGreen.png" width="120" height="120" />
+          <button className="px-4 py-2 bg-white border-2 border-black rounded-full -mt-4 font-bold">
+            {categories[0].category} &rarr;
+          </button>
+        </div>
+        <div className="flex flex-col  items-center">
+          <Image src="/blobs/blobOrange.png" width="120" height="120" />
+          <button className="px-4 py-2 bg-white border-2 border-black rounded-full -mt-4 font-bold">
+            {categories[2].category} &rarr;
+          </button>
+        </div>
+        <div className="flex flex-col  items-center">
+          <Image src="/blobs/blobPink.png" width="120" height="120" />
+          <button className="px-4 py-2 bg-white border-2 border-black rounded-full -mt-4 font-bold">
+            {categories[3].category} &rarr;
+          </button>
         </div>
       </div>
-      <div className="mt-[500px] flex flex-col">
+      <div className="mt-[500px] flex flex-col z-50">
         <BeginButton />
         <Link
           href="/slider"
