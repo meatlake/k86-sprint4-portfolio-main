@@ -128,7 +128,7 @@ const Page = () => {
         </div>
         {isLastQuestion() && (
           <Link
-            href="/portfolio"
+            href="/pages/portfolioVormgever"
             className="text-black mt-4 bg-white self-center border-2 border-transparent px-4 py-2 hover:text-white hover:bg-black hover:border-white transition-all duration-200 ease-in-out"
           >
             Zie uitslag

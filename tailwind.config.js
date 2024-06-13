@@ -74,6 +74,9 @@ module.exports = {
       backgroundImage: {
         "bg-image": "url('../public/images/homeBg.png')",
         blobGroen: "url('../public/blobGroen.png')",
+        blobBlue: "url('../public/blobBlue.png')",
+        blobOrange: "url('../public/blobOrange.png')",
+        blobPink: "url('../public/blobPink.png')",
       },
     },
   },

@@ -3,6 +3,7 @@ import Link from "next/link";
 import BeginButton from "./components/BeginButton";
 import Image from "next/image";
 import { categories } from "./categories";
+import { portfolioInfo } from "./portfolioInfo";
 
 export default function Home() {
   return (
@@ -31,25 +32,33 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center">
           <Image src="/blobs/blobBlue.png" width="120" height="120" />
           <button className="px-4 py-2 bg-white border-2 border-black rounded-full -mt-4 font-bold">
-            {categories[1].category} &rarr;
+            <Link href="/pages/portfolioCoder">
+              {categories[1].category} &rarr;
+            </Link>
           </button>
         </div>
         <div className="flex flex-col  items-center">
           <Image src="/blobs/blobGreen.png" width="120" height="120" />
           <button className="px-4 py-2 bg-white border-2 border-black rounded-full -mt-4 font-bold">
-            {categories[0].category} &rarr;
+            <Link href="/pages/portfolioVormgever">
+              {categories[0].category} &rarr;
+            </Link>
           </button>
         </div>
         <div className="flex flex-col  items-center">
           <Image src="/blobs/blobOrange.png" width="120" height="120" />
           <button className="px-4 py-2 bg-white border-2 border-black rounded-full -mt-4 font-bold">
-            {categories[2].category} &rarr;
+            <Link href="/pages/portfolio3Dartist">
+              {categories[2].category} &rarr;
+            </Link>
           </button>
         </div>
         <div className="flex flex-col  items-center">
           <Image src="/blobs/blobPink.png" width="120" height="120" />
           <button className="px-4 py-2 bg-white border-2 border-black rounded-full -mt-4 font-bold">
-            {categories[3].category} &rarr;
+            <Link href="/pages/portfolioAnimator">
+              {categories[3].category} &rarr;
+            </Link>
           </button>
         </div>
       </div>
