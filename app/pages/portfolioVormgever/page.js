@@ -30,7 +30,7 @@ const page = () => {
       <div className="flex text-center lg:gap-12 justify-center items-center mt-[4rem] lg:mt-[150px]">
         <p className="rotate-90 lg:text-2xl">&rarr;</p>
         <h2 className="text-md px-12 lg:text-2xl">
-          Vind hier front-end UX inspiratie voor je volgende project{" "}
+          Vind hier vormgeving UX inspiratie voor je volgende project{" "}
         </h2>
         <p className="rotate-90 lg:text-2xl">&rarr;</p>
       </div>
