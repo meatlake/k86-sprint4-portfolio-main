@@ -73,6 +73,11 @@ module.exports = {
       },
       backgroundImage: {
         "bg-image": "url('../public/images/homeBg.png')",
+        vormgevingFemke1: "url('/images/fruit.jpg')",
+        vormgevingFemke2: "url('/images/berg.jpg')",
+        vormgevingFemke3: "url('/images/kunsttt.jpg')",
+        vormgevingFemke4: "url('/images/Frame.jpg')",
+        vormgevingFemke5: "url('/images/paintingDamian.jpg",
         blobGroen: "url('../public/blobGroen.png')",
         blobBlue: "url('../public/blobBlue.png')",
         blobOrange: "url('../public/blobOrange.png')",

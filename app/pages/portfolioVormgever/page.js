@@ -36,10 +36,10 @@ const page = () => {
       </div>
       <div className="grid grid-cols-2 mt-[4rem] lg:mt-24">
         <div className="flex flex-col lg:grid grid-cols-2 gap-2">
-          <img src="/images/fruit.jpg" alt="images" className="w-full " />
-          <img src="/images/berg.jpg" alt="images" className="w-full " />
-          <img src="/images/kunsttt.jpg" alt="images" className="w-full " />
-          <img src="/images/Frame.jpg" alt="images" className="w-full " />
+          <div className="bg-vormgevingFemke1 bg-cover w-full h-[300px] bg-no-repeat"></div>
+          <div className="bg-vormgevingFemke2 bg-cover w-full h-[300px] bg-no-repeat"></div>
+          <div className="bg-vormgevingFemke3 bg-cover w-full h-[300px] bg-no-repeat"></div>
+          <div className="bg-vormgevingFemke4 bg-cover w-full h-[300px] bg-no-repeat"></div>
         </div>
         <div className="pl-4 lg:pl-12 flex flex-col gap-6">
           <h2 className="lg:text-3xl text-xl font-semibold">
