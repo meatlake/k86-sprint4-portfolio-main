@@ -28,35 +28,55 @@ export default function Home() {
           </li>
         </ul>
       </div> */}
-      <div className="fixed h-screen w-screen flex gap-6 justify-center items-center">
+      <div className="fixed h-screen w-screen px-6 flex gap-6 justify-center items-center">
         <div className="flex flex-col justify-center items-center">
-          <Image src="/blobs/blobBlue.png" width="120" height="120" />
-          <button className="px-4 py-2 bg-white border-2 border-black rounded-full -mt-4 font-bold">
-            <Link href="/pages/portfolioCoder">
+          <Image
+            src="/blobs/blobBlue.png"
+            width="120"
+            height="120"
+            className="w-[85px] lg:w-full"
+          />
+          <button className="lg:px-4 lg:py-2 px-2 py-1 text-sm bg-white border-2 border-black rounded-full -mt-4 font-bold">
+            <Link className="text-sm" href="/pages/portfolioCoder">
               {categories[1].category} &rarr;
             </Link>
           </button>
         </div>
         <div className="flex flex-col  items-center">
-          <Image src="/blobs/blobGreen.png" width="120" height="120" />
-          <button className="px-4 py-2 bg-white border-2 border-black rounded-full -mt-4 font-bold">
-            <Link href="/pages/portfolioVormgever">
+          <Image
+            src="/blobs/blobGreen.png"
+            width="120"
+            height="120"
+            className="w-[80px] lg:w-full"
+          />
+          <button className="lg:px-4 lg:py-2 px-2 py-1 text-sm bg-white border-2 border-black rounded-full -mt-4 font-bold">
+            <Link className="text-sm" href="/pages/portfolioVormgever">
               {categories[0].category} &rarr;
             </Link>
           </button>
         </div>
         <div className="flex flex-col  items-center">
-          <Image src="/blobs/blobOrange.png" width="120" height="120" />
-          <button className="px-4 py-2 bg-white border-2 border-black rounded-full -mt-4 font-bold">
-            <Link href="/pages/portfolio3Dartist">
+          <Image
+            src="/blobs/blobOrange.png"
+            width="120"
+            height="120"
+            className="w-[80px] lg:w-full"
+          />
+          <button className="lg:px-4 lg:py-2 px-2 py-1 text-sm bg-white border-2 border-black rounded-full -mt-4 font-bold">
+            <Link className="text-sm" href="/pages/portfolio3Dartist">
               {categories[2].category} &rarr;
             </Link>
           </button>
         </div>
         <div className="flex flex-col  items-center">
-          <Image src="/blobs/blobPink.png" width="120" height="120" />
-          <button className="px-4 py-2 bg-white border-2 border-black rounded-full -mt-4 font-bold">
-            <Link href="/pages/portfolioAnimator">
+          <Image
+            src="/blobs/blobPink.png"
+            width="120"
+            height="120"
+            className="w-[80px] lg:w-full"
+          />
+          <button className="lg:px-4 lg:py-2 px-2 py-1 text-sm bg-white border-2 border-black rounded-full -mt-4 font-bold">
+            <Link className="text-sm" href="/pages/portfolioAnimator">
               {categories[3].category} &rarr;
             </Link>
           </button>
@@ -66,7 +86,7 @@ export default function Home() {
         <BeginButton />
         <Link
           href="/slider"
-          className="mt-4 text-2xl min-w-[250px] text-center text-black bg-white font-semibold rounded-lg px-4 py-2 hover:bg-black hover:text-white transition-all duration-200 ease-in-out"
+          className="mt-4 text-2xl min-w-[250px] text-center text-black bg-white font-semibold rounded-lg lg:px-4 lg:py-2 px-2 py-1 text-sm hover:bg-black hover:text-white transition-all duration-200 ease-in-out"
         >
           Slider
         </Link>
