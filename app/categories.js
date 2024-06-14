@@ -1,6 +1,6 @@
 export const categories = [
   {
-    category: "Vormgever",
+    category: "Vormgeving",
   },
   {
     category: "Coder",
