@@ -28,18 +28,18 @@ export default function Home() {
           </li>
         </ul>
       </div> */}
-      <div className="fixed h-screen w-screen px-6 flex gap-6 justify-center items-center">
+      <div className="fixed h-screen w-screen px-6 flex gap-2 justify-center items-center">
         <div className="flex flex-col justify-center items-center">
           <Image
             src="/blobs/blobBlue.png"
             width="120"
             height="120"
-            className="w-[85px] lg:w-full"
+            className="w-[80px] lg:w-full"
             alt="blob"
           />
-          <button className="lg:px-4 lg:py-2 px-2 py-1 text-sm bg-white border-2 border-black rounded-full -mt-4 font-bold">
-            <Link className="text-sm" href="/pages/portfolioCoder">
-              {categories[1].category} &rarr;
+          <button className="lg:px-4 lg:py-2 px-2 py-1 text-[0.75rem] bg-white border-2 border-black rounded-full -mt-4 font-bold">
+            <Link className="text-[0.75rem]" href="/pages/portfolioCoder">
+              {categories[1].category}
             </Link>
           </button>
         </div>
@@ -48,12 +48,12 @@ export default function Home() {
             src="/blobs/blobGreen.png"
             width="120"
             height="120"
-            className="w-[80px] lg:w-full"
+            className="w-[78px] lg:w-full"
             alt="blob"
           />
-          <button className="lg:px-4 lg:py-2 px-2 py-1 text-sm bg-white border-2 border-black rounded-full -mt-4 font-bold">
-            <Link className="text-sm" href="/pages/portfolioVormgever">
-              {categories[0].category} &rarr;
+          <button className="lg:px-4 lg:py-2 px-2 py-1 text-[0.75rem] bg-white border-2 border-black rounded-full -mt-4 font-bold">
+            <Link className="text-[0.75rem]" href="/pages/portfolioVormgever">
+              {categories[0].category}
             </Link>
           </button>
         </div>
@@ -65,9 +65,9 @@ export default function Home() {
             className="w-[80px] lg:w-full"
             alt="blob"
           />
-          <button className="lg:px-4 lg:py-2 px-2 py-1 text-sm bg-white border-2 border-black rounded-full -mt-4 font-bold">
-            <Link className="text-sm" href="/pages/portfolio3Dartist">
-              {categories[2].category} &rarr;
+          <button className="lg:px-4 lg:py-2 px-2 py-1 text-[0.75rem] bg-white border-2 border-black rounded-full -mt-4 font-bold">
+            <Link className="text-[0.75rem]" href="/pages/portfolio3Dartist">
+              {categories[2].category}
             </Link>
           </button>
         </div>
@@ -79,14 +79,14 @@ export default function Home() {
             className="w-[80px] lg:w-full"
             alt="blob"
           />
-          <button className="lg:px-4 lg:py-2 px-2 py-1 text-sm bg-white border-2 border-black rounded-full -mt-4 font-bold">
-            <Link className="text-sm" href="/pages/portfolioAnimator">
-              {categories[3].category} &rarr;
+          <button className="lg:px-4 lg:py-2 px-2 py-1 text-[0.75rem] bg-white border-2 border-black rounded-full -mt-4 font-bold">
+            <Link className="text-[0.75rem]" href="/pages/portfolioAnimator">
+              {categories[3].category}
             </Link>
           </button>
         </div>
       </div>
-      <div className="mt-[500px] flex flex-col z-50">
+      <div className="mt-[300px] flex flex-col z-50">
         <BeginButton />
         <Link
           href="/slider"
