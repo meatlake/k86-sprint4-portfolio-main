@@ -7,7 +7,7 @@ import { portfolioInfo } from "./portfolioInfo";
 
 export default function Home() {
   return (
-    <div className="fixed top-0 left-0 flex flex-col justify-center px-5 items-center w-screen h-screen bg-bg-image bg-cover bg-no-repeat">
+    <div className="fixed top-0 left-0 flex flex-col justify-center px-5 items-center w-screen h-screen bg-bg-image bg-cover bg-center bg-no-repeat">
       {/* <div className="p-12 backdrop-blur-xl rounded-xl border border-2">
         <h1 className="lg:text-5xl text-3xl font-display text-white font-semibold">
           Welkom bij onze quiz
