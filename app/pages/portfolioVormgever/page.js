@@ -12,10 +12,10 @@ const page = () => {
         <QuitButton />
         <PortfolioButtons />
       </div>
-      <div className="absolute right-2 top-[70px] lg:top-2 bg-no-repeat bg-cover">
+      <div className="absolute right-2 top-[100px] lg:top-2 bg-no-repeat bg-cover">
         <img
           src="/images/vormgevingPortfolio.png"
-          className="w-44 lg:w-full"
+          className="w-32 lg:w-full"
           alt="vormgeving icon"
         />
       </div>

@@ -15,7 +15,7 @@ const page = () => {
       <div className="absolute right-2 top-[100px] lg:top-2 bg-no-repeat bg-cover">
         <img
           src="/images/animatiePortfolio.png"
-          className="w-44 lg:w-full"
+          className="w-32 lg:w-full"
           alt="animator icon"
         />
       </div>
