@@ -35,6 +35,7 @@ export default function Home() {
             width="120"
             height="120"
             className="w-[85px] lg:w-full"
+            alt="blob"
           />
           <button className="lg:px-4 lg:py-2 px-2 py-1 text-sm bg-white border-2 border-black rounded-full -mt-4 font-bold">
             <Link className="text-sm" href="/pages/portfolioCoder">
@@ -48,6 +49,7 @@ export default function Home() {
             width="120"
             height="120"
             className="w-[80px] lg:w-full"
+            alt="blob"
           />
           <button className="lg:px-4 lg:py-2 px-2 py-1 text-sm bg-white border-2 border-black rounded-full -mt-4 font-bold">
             <Link className="text-sm" href="/pages/portfolioVormgever">
@@ -61,6 +63,7 @@ export default function Home() {
             width="120"
             height="120"
             className="w-[80px] lg:w-full"
+            alt="blob"
           />
           <button className="lg:px-4 lg:py-2 px-2 py-1 text-sm bg-white border-2 border-black rounded-full -mt-4 font-bold">
             <Link className="text-sm" href="/pages/portfolio3Dartist">
@@ -74,6 +77,7 @@ export default function Home() {
             width="120"
             height="120"
             className="w-[80px] lg:w-full"
+            alt="blob"
           />
           <button className="lg:px-4 lg:py-2 px-2 py-1 text-sm bg-white border-2 border-black rounded-full -mt-4 font-bold">
             <Link className="text-sm" href="/pages/portfolioAnimator">

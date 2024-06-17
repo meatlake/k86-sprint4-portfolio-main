@@ -13,7 +13,11 @@ const page = () => {
         <PortfolioButtons />
       </div>
       <div className="absolute right-2 top-[100px] lg:top-2 bg-no-repeat bg-cover">
-        <img src="/images/developerPortfolio.png" className="w-44 lg:w-full" />
+        <img
+          src="/images/developerPortfolio.png"
+          className="w-44 lg:w-full"
+          alt="developer icon"
+        />
       </div>
       <div className="mt-32">
         <div className="flex flex-col gap-1 lg:gap-4">
@@ -79,7 +83,7 @@ const page = () => {
         </div>
       </div>
       <div className="mt-12">
-        <img src="/images/coderJulian2.png" />
+        <img src="/images/coderJulian2.png" alt="code screenshot" />
       </div>
       <div className="lg:hidden w-full h-[2px] bg-slate-500 my-12"></div>
       <div className="mt-12 flex flex-col lg:grid lg:grid-cols-2 lg:gap-4"></div>

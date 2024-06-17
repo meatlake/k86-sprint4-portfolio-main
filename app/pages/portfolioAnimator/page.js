@@ -13,7 +13,11 @@ const page = () => {
         <PortfolioButtons />
       </div>
       <div className="absolute right-2 top-[100px] lg:top-2 bg-no-repeat bg-cover">
-        <img src="/images/animatiePortfolio.png" className="w-44 lg:w-full" />
+        <img
+          src="/images/animatiePortfolio.png"
+          className="w-44 lg:w-full"
+          alt="animator icon"
+        />
       </div>
       <div className="mt-32">
         <div className="flex flex-col gap-1 lg:gap-4">
@@ -53,9 +57,9 @@ const page = () => {
           <p className="lg:text-xl text-md">
             XR is een actiegroep die zich inzet voor het klimaat. Ze staan
             bekend voor hun protest acties waarbij ze o.a. de A12 snelweg
-            blokkeren. Voor mijn 1e sprint van de minor heb ik campagnevideo's
-            gemaakt. Door middel van storytelling en animatie heb ik deze
-            campagne vormgeven.
+            blokkeren. Voor mijn 1e sprint van de minor heb ik
+            campagnevideo&apos;s gemaakt. Door middel van storytelling en
+            animatie heb ik deze campagne vormgeven.
           </p>
           <p className="lg:text-md text-sm">
             Het idee is om dezelfde scripts op twee verschillende wijzen in
@@ -64,8 +68,9 @@ const page = () => {
             te maken vertel ik in het script over een vergelijking met een pakje
             sigaretten. Dit script heb ik in een grafisch manier geanimeerd, en
             ook een video gemaakt bestaande uit beelden. Het doel van deze
-            video’s is de boodschap van XR verspreiden. Ik vond het ontzettend
-            leuk verschillende beeld vormen te vinden voor deze video’s. 
+            video&apos;s is de boodschap van XR verspreiden. Ik vond het
+            ontzettend leuk verschillende beeld vormen te vinden voor deze
+            video&apos;s.
           </p>
         </div>
       </div>
@@ -101,7 +106,7 @@ const page = () => {
           </p>
         </div>
         <div className="mt-4 lg:mt-0 flex flex-col gap-4">
-          <img src="/images/animatieDamian1.png" />
+          <img src="/images/animatieDamian1.png" alt="image Damian" />
           <video width="full" height="700" controls>
             <source src="/videos/animatieDamianVid1.mp4" type="video/mp4" />
           </video>
