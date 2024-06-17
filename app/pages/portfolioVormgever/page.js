@@ -1,6 +1,7 @@
 import React from "react";
 import QuitButton from "@/app/components/QuitButton";
 import { portfolioInfo } from "@/app/portfolioInfo";
+import PortfolioButtons from "@/app/components/PortfolioButtons";
 
 const page = () => {
   const portfolioNumber = 0;
@@ -9,8 +10,9 @@ const page = () => {
     <div className="bg-black absolute px-4 lg:px-32 top-0 left-0 w-full h-full text-white">
       <div className="fixed top-4 left-4 flex gap-4">
         <QuitButton />
+        <PortfolioButtons />
       </div>
-      <div className="absolute right-2 top-2 bg-no-repeat bg-cover">
+      <div className="absolute right-2 top-[70px] lg:top-2 bg-no-repeat bg-cover">
         <img src="/images/vormgevingPortfolio.png" className="w-44 lg:w-full" />
       </div>
       <div className="mt-32">
@@ -30,7 +32,8 @@ const page = () => {
       <div className="flex text-center lg:gap-12 justify-center items-center mt-[4rem] lg:mt-[150px]">
         <p className="rotate-90 lg:text-2xl">&rarr;</p>
         <h2 className="text-md px-12 lg:text-2xl">
-          Vind hier vormgeving UX inspiratie voor je volgende project{" "}
+          Vind hier {portfolioInfo[portfolioNumber].title} UX inspiratie voor je
+          volgende project{" "}
         </h2>
         <p className="rotate-90 lg:text-2xl">&rarr;</p>
       </div>
@@ -104,6 +107,7 @@ const page = () => {
           <img src="/images/kevinVorm1.png" />
         </div>
       </div>
+      <div className="h-32"></div>
     </div>
   );
 };
