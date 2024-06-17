@@ -8,7 +8,7 @@ const page = () => {
 
   return (
     <div className="bg-black absolute px-4 lg:px-32 top-0 left-0 w-full h-full text-white">
-      <div className="fixed top-4 left-4 flex gap-4">
+      <div className="fixed top-4 left-4 flex gap-2 lg:gap-4">
         <QuitButton />
         <PortfolioButtons />
       </div>
