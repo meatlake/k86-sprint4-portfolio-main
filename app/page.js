@@ -135,7 +135,7 @@ export default function Home() {
               thema wat jou het meest interesseert. Hier laten we onze projecten
               zien waaraan we hebben gewerkt gedurende deze minor. De vragen
               zijn gebaseerd op onze projecten uit deze minor en gecategoriseerd
-              in 4 UX thema's: vormgeven, animeren, 3D modelleren en
+              in 4 UX thema&apos;s: vormgeven, animeren, 3D modelleren en
               programmeren.
             </p>
           </div>
