@@ -7,27 +7,7 @@ import { portfolioInfo } from "./portfolioInfo";
 
 export default function Home() {
   return (
-    <div className="fixed top-0 left-0 flex flex-col justify-center px-5 items-center w-screen h-screen bg-bg-image bg-cover bg-center bg-no-repeat">
-      {/* <div className="p-12 backdrop-blur-xl rounded-xl border border-2">
-        <h1 className="lg:text-5xl text-3xl font-display text-white font-semibold">
-          Welkom bij onze quiz
-        </h1>
-        <p className="text-white text-lg mt-8 italic">Gemaakt door:</p>
-        <ul className="mt-2 grid grid-cols-2 gap-2">
-          <li className="text-white py-2 text-xl lg:text-2xl font-semibold">
-            Kevin
-          </li>
-          <li className="text-white py-2 text-xl lg:text-2xl font-semibold">
-            Femke
-          </li>
-          <li className="text-white py-2 text-xl lg:text-2xl font-semibold">
-            Damian
-          </li>
-          <li className="text-white py-2 text-xl lg:text-2xl font-semibold">
-            Julian
-          </li>
-        </ul>
-      </div> */}
+    <div className="fixed top-0 left-0 flex flex-col justify-end px-5 items-center w-screen h-screen bg-bg-image bg-cover bg-center bg-no-repeat">
       <div className="fixed h-screen w-screen px-6 flex gap-2 justify-center items-center">
         <div className="flex flex-col justify-center items-center">
           <Image
@@ -88,12 +68,19 @@ export default function Home() {
       </div>
       <div className="mt-[300px] flex flex-col z-50">
         <BeginButton />
-        <Link
+        {/* <Link
           href="/slider"
           className="mt-4 text-2xl min-w-[250px] text-center text-black bg-white font-semibold rounded-lg lg:px-4 lg:py-2 px-2 py-1 text-sm hover:bg-black hover:text-white transition-all duration-200 ease-in-out"
         >
           Slider
-        </Link>
+        </Link> */}
+        <div className="flex flex-col items-center lg:mt-32 lg:mb-20">
+          <h2 className="font-bold text-2xl">Over dit project</h2>
+          <p className="rotate-90 text-2xl">&rarr;</p>
+        </div>
+      </div>
+      <div>
+        <h1>About us</h1>
       </div>
     </div>
   );
