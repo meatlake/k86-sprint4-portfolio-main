@@ -8,7 +8,7 @@ import { portfolioInfo } from "./portfolioInfo";
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <div className="relative top-0 left-0 flex flex-col justify-end px-5 items-center w-screen h-screen bg-bg-image bg-cover bg-bottom bg-no-repeat">
+      <div className="relative top-0 left-0 flex flex-col justify-end px-5 items-center w-full h-screen bg-bg-image bg-cover bg-bottom bg-no-repeat">
         <div className="absolute h-screen w-screen px-6 flex gap-2 justify-center items-center">
           <div className="flex flex-col justify-center items-center">
             <Image
@@ -140,7 +140,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="relative flex flex-col bg-bg-sterren w-screen h-screen bg-no-repeat bg-cover bg-center mt-32">
+        <div className="relative flex flex-col bg-bg-sterren w-full h-screen bg-no-repeat bg-cover bg-center mt-32">
           <Image
             src="/images/blobRozeAbout.svg"
             alt="blob roze"
