@@ -72,7 +72,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        "bg-image": "url('../public/images/homeBg.png')",
+        "bg-image": "url('../public/images/bg-about.svg')",
         "bg-sterren": "url('/images/Sterren.svg')",
         vormgevingFemke1: "url('/images/fruit.jpg')",
         vormgevingFemke2: "url('/images/berg.jpg')",

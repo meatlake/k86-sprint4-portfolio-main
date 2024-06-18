@@ -8,7 +8,7 @@ import { portfolioInfo } from "./portfolioInfo";
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <div className="relative top-0 left-0 flex flex-col justify-end px-5 items-center w-screen h-screen bg-bg-image bg-cover bg-center bg-no-repeat">
+      <div className="relative top-0 left-0 flex flex-col justify-end px-5 items-center w-screen h-screen bg-bg-image bg-cover bg-bottom bg-no-repeat">
         <div className="absolute h-screen w-screen px-6 flex gap-2 justify-center items-center">
           <div className="flex flex-col justify-center items-center">
             <Image
@@ -67,7 +67,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="mt-[300px] flex flex-col z-50">
+        <div className="mt-[300px] flex flex-col gap-6 lg:gap-0 z-50">
           <BeginButton />
           {/* <Link
           href="/slider"
@@ -90,9 +90,9 @@ export default function Home() {
         </div>
       </div>
       <div id="about-us" className="bg-[#E1D500] py-32">
-        <div className="grid grid-cols-3 pl-24">
-          <div className="flex flex-col col-span-1 gap-6">
-            <p className="text-2xl font-semibold">
+        <div className="lg:grid lg:grid-cols-3 flex flex-col lg:pl-24">
+          <div className="flex flex-col col-span-1 gap-6 px-6 lg:px-0">
+            <p className="text-2xl ">
               In de minor K86 Visual Design end Front-end development staat
               centraal dat jij ontdekt waar jou talenten en interesses liggen
               binnen het gebied van UX design.
@@ -111,11 +111,11 @@ export default function Home() {
               alt="about us blobjes"
               width="100"
               height="100"
-              className="w-[600px] h-full"
+              className="w-[600px] h-full pl-6 lg:pl-0 lg:mt-0 mt-12"
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-24 px-24">
+        <div className="lg:grid grid-cols-2 flex flex-col gap-24 px-6 lg:px-24 lg:mt-0 mt-20">
           <div className="flex flex-col gap-6">
             <h2 className="text-3xl font-semibold">De droomboom</h2>
             <p className="text-xl">
@@ -140,13 +140,33 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="relative bg-bg-sterren w-screen h-screen bg-no-repeat bg-cover mt-32">
+        <div className="relative flex flex-col bg-bg-sterren w-screen h-screen bg-no-repeat bg-cover bg-center mt-32">
           <Image
             src="/images/blobRozeAbout.svg"
             alt="blob roze"
             width={300}
             height={300}
+            className="w-[200px] lg:w-[300px]"
           />
+          <Image
+            src="/images/blobGroenAbout.svg"
+            alt="blob groen"
+            width={300}
+            height={300}
+            className="w-[200px] lg:w-[300px] self-end"
+          />
+        </div>
+        <div className="px-12 flex flex-col gap-12 lg:px-[350px]">
+          <p className="text-center text-xl lg:text-xl font-medium">
+            Deze minor heeft ons geïnspireerd om nieuwe dingen te leren binnen
+            het vak van UX design. En we hopen jou ook met deze quiz en onze
+            projecten verder te kunnen inspireren.
+          </p>
+          <p className="text-center text-xl lg:text-xl font-medium">
+            Wil je onze projecten zien zonder de quiz te doorlopen? Klik dan op
+            een van de karakters in de droomboom om naar de project
+            pagina&apos;s te navigeren.
+          </p>
         </div>
       </div>
     </div>
