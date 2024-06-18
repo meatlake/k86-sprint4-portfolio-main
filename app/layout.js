@@ -19,6 +19,11 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className="bg-black">
+      <head>
+        <title>K86 sprint 4 portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="/blobs/blobBlue.png" />
+      </head>
       <body className={inter.className}>
         {!videoEnded && (
           <video id="introVideo" autoPlay muted className="w-screen h-screen">
