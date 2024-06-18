@@ -92,7 +92,7 @@ export default function Home() {
       <div id="about-us" className="bg-[#E1D500] py-32">
         <div className="grid grid-cols-3 pl-24">
           <div className="flex flex-col col-span-1 gap-6">
-            <p className="text-2xl ">
+            <p className="text-2xl font-semibold">
               In de minor K86 Visual Design end Front-end development staat
               centraal dat jij ontdekt waar jou talenten en interesses liggen
               binnen het gebied van UX design.
