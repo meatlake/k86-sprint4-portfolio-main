@@ -1,7 +1,8 @@
 import React from "react";
 import { Slider } from "../components/Slider";
 import QuitButton from "../components/QuitButton";
-import { quizQuestions } from "../quizQuestions";
+import { sliderQuestions } from "../sliderQuestions";
+import { categories } from "../categories";
 
 const page = () => {
   return (
@@ -11,7 +12,7 @@ const page = () => {
       </div>
 
       <label for="slider">
-        <h1>{quizQuestions[0].question}</h1>
+        <h1>{sliderQuestions[0].question}</h1>
       </label>
       <Slider />
       {/* <input type="submit" value="Volgende" accessKey="enter"></input> */}
