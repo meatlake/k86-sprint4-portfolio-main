@@ -21,13 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="bg-black">
       <body className={inter.className}>
         {!videoEnded && (
-          <video
-            id="introVideo"
-            autoPlay
-            muted
-            controls
-            className="w-screen h-screen"
-          >
+          <video id="introVideo" autoPlay muted className="w-screen h-screen">
             <source src="/videos/openingvid.mp4" type="video/mp4" />
           </video>
         )}
