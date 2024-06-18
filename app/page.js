@@ -118,7 +118,7 @@ export default function Home() {
         <div className="grid grid-cols-2 gap-24 px-24">
           <div className="flex flex-col gap-6">
             <h2 className="text-3xl font-semibold">De droomboom</h2>
-            <p>
+            <p className="text-xl">
               Ons concept is “de Droomboom” gaan heten. In een creatieve sessie
               ontstond de metafoor van de boom omdat we één product (de stam)
               moesten maken voor sprint 4 maar wij als groep zo veel
@@ -130,7 +130,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-6">
             <h2 className="text-3xl font-semibold">De quiz</h2>
-            <p>
+            <p className="text-xl">
               Door middel van 4 stellingen en 4 vragen brengen we je bij het UX
               thema wat jou het meest interesseert. Hier laten we onze projecten
               zien waaraan we hebben gewerkt gedurende deze minor. De vragen
@@ -139,6 +139,14 @@ export default function Home() {
               programmeren.
             </p>
           </div>
+        </div>
+        <div className="relative bg-bg-sterren w-screen h-screen bg-no-repeat bg-cover mt-32">
+          <Image
+            src="/images/blobRozeAbout.svg"
+            alt="blob roze"
+            width={300}
+            height={300}
+          />
         </div>
       </div>
     </div>
