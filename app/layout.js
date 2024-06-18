@@ -26,7 +26,12 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         {!videoEnded && (
-          <video id="introVideo" autoPlay muted className="w-screen h-screen">
+          <video
+            id="introVideo"
+            autoPlay
+            muted
+            className="lg:min-w-full lg:min-h-full w-auto h-auto"
+          >
             <source src="/videos/openingvid.mp4" type="video/mp4" />
           </video>
         )}
