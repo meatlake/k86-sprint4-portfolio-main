@@ -8,15 +8,6 @@ import { useState, useEffect } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
-  const [videoEnded, setVideoEnded] = useState(false);
-
-  useEffect(() => {
-    const video = document.getElementById("introVideo");
-    video.onended = () => {
-      setVideoEnded(true);
-    };
-  }, []);
-
   return (
     <html lang="en" className="bg-black">
       <head>
@@ -25,23 +16,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/x-icon" href="/blobs/blobBlue.png" />
       </head>
       <body className={inter.className}>
-        {!videoEnded && (
-          <video
-            id="introVideo"
-            autoPlay
-            muted
-            className="lg:min-w-full lg:min-h-full w-auto h-auto"
-          >
-            <source src="/videos/openingvid.mp4" type="video/mp4" />
-          </video>
-        )}
-        {videoEnded && (
-          <>
-            {children}
-            <Analytics />
-            <SpeedInsights />
-          </>
-        )}
+        {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

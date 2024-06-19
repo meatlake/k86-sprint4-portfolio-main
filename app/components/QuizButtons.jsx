@@ -10,6 +10,7 @@ const QuizButtons = () => {
   const [countVormgever, setCountVormgever] = useState(0);
 
   const [questionId, setQuestionId] = useState(0);
+  
   function nextQuestion() {
     if (questionId < quizQuestions.length - 1) {
       setQuestionId(questionId + 1);
