@@ -4,7 +4,7 @@ import QuitButton from "@/app/components/QuitButton";
 import { sliderQuestions } from "@/app/sliderQuestions";
 import { categories } from "@/app/categories";
 
-const page = () => {
+const Page = () => {
   const [countCoder, setCountCoder] = useState(0);
   const [countAnimator, setCountAnimator] = useState(0);
   const [countArtist, setCountArtist] = useState(0);
@@ -129,4 +129,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
