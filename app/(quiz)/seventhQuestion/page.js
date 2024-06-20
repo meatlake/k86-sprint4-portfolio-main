@@ -50,7 +50,7 @@ const Page = () => {
   };
 
   return (
-    <div className="absolute top-0 left-0 flex flex-col justify-between py-12 px-4 items-center w-screen h-screen bg-black">
+    <div className="absolute top-0 left-0 flex bg-bg-quiz bg-no-repeat bg-cover flex-col justify-between py-12 px-4 items-center w-screen h-screen bg-black">
       <div className="absolute top-4 left-4 flex gap-4">
         <QuitButton />
         {/* {questionId > 0 && (
@@ -105,22 +105,22 @@ const Page = () => {
             <img
               onClick={onClickCoder}
               src={quizQuestions[questionId].answers[0].content}
-              className="lg:w-full h-[200px] w-full object-cover lg:h-[250px] border-2 cursor-pointer"
+              className="lg:w-full h-[200px] w-full object-cover lg:h-[250px] cursor-pointer"
             ></img>
             <img
               onClick={onClickAnimator}
               src={quizQuestions[questionId].answers[1].content}
-              className="lg:w-full h-[200px] w-full object-cover lg:h-[250px] border-2 cursor-pointer"
+              className="lg:w-full h-[200px] w-full object-cover lg:h-[250px] cursor-pointer"
             ></img>
             <img
               onClick={onClickVormgever}
               src={quizQuestions[questionId].answers[2].content}
-              className="lg:w-full h-[200px] w-full object-cover lg:h-[250px] border-2 cursor-pointer"
+              className="lg:w-full h-[200px] w-full object-cover lg:h-[250px] cursor-pointer"
             ></img>
             <img
               onClick={onClickArtist}
               src={quizQuestions[questionId].answers[3].content}
-              className="lg:w-full h-[200px] w-full object-cover lg:h-[250px] border-2 cursor-pointer"
+              className="lg:w-full h-[200px] w-full object-cover lg:h-[250px] cursor-pointer"
             ></img>
           </div>
           {/* {isLastQuestion() && (

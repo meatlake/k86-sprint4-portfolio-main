@@ -51,7 +51,7 @@ const Page = () => {
     document.getElementById("inputValueText").innerHTML = x;
   }
   return (
-    <div className="bg-black text-white p-24 flex flex-col h-screen gap-12 items-center justify-center">
+    <div className="bg-black text-white p-24 bg-bg-slider bg-no-repeat bg-cover flex flex-col h-screen gap-12 items-center justify-center">
       <div className="absolute top-4 left-4 flex gap-4">
         <QuitButton />
       </div>

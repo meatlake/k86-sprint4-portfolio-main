@@ -50,7 +50,7 @@ const Page = () => {
   };
 
   return (
-    <div className="absolute top-0 left-0 flex flex-col justify-between py-12 px-4 items-center w-screen h-screen bg-black">
+    <div className="absolute top-0 left-0 flex bg-bg-quiz bg-no-repeat bg-cover flex-col justify-between py-12 px-4 items-center w-screen h-screen bg-black">
       <div className="absolute top-4 left-4 flex gap-4">
         <QuitButton />
         {/* {questionId > 0 && (
@@ -104,25 +104,25 @@ const Page = () => {
           <div className="mt-2 grid grid-cols-2 mx-1 lg:mx-10 gap-2">
             <button
               onClick={onClickCoder}
-              className="p-5 lg:p-10 text-sm lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
+              className="p-5 lg:p-10 text-sm lg:text-2xl lg:min-w-64 lg:min-h-64  border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
             >
               {quizQuestions[questionId].answers[0].content}
             </button>
             <button
               onClick={onClickAnimator}
-              className="p-5 lg:p-10 text-sm lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
+              className="p-5 lg:p-10 text-sm lg:text-2xl lg:min-w-64 lg:min-h-64  border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
             >
               {quizQuestions[questionId].answers[1].content}
             </button>
             <button
               onClick={onClickVormgever}
-              className="p-5 lg:p-10 text-sm lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
+              className="p-5 lg:p-10 text-sm lg:text-2xl lg:min-w-64 lg:min-h-64  border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
             >
               {quizQuestions[questionId].answers[2].content}
             </button>
             <button
               onClick={onClickArtist}
-              className="p-5 lg:p-10 text-sm lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
+              className="p-5 lg:p-10 text-sm lg:text-2xl lg:min-w-64 lg:min-h-64  border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
             >
               {quizQuestions[questionId].answers[3].content}
             </button>
