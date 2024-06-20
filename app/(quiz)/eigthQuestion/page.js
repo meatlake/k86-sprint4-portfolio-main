@@ -86,12 +86,12 @@ const Page = () => {
           </ul>
         </div> */}
 
-        <h3 className="text-white text-xl lg:text-2xl font-semibold self-center mt-10 md:mt-2 lg:mb-2">
+        <h3 className="text-white text-xl lg:text-2xl font-medium self-center mt-10 md:mt-2 lg:mb-2">
           Vraag: {questionId + 5} van 8
         </h3>
 
         <label for="slider">
-          <h1 className="text-center font-semibold text-xl">
+          <h1 className="text-center font-semibold text-3xl">
             {sliderQuestions[questionId].question}
           </h1>
         </label>
