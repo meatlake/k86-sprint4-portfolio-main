@@ -10,7 +10,7 @@ const page = () => {
   return (
     <div className="bg-black absolute px-4 lg:px-32 top-0 left-0 w-full h-full text-white">
       <NavBar />
-      <div className="absolute right-2 top-[100px] lg:top-2 bg-no-repeat bg-cover">
+      <div className="absolute right-2 top-[100px] bg-no-repeat bg-cover">
         <img
           src="/images/3dartistPortfolio.png"
           className="w-32 lg:w-[600px]"
@@ -39,41 +39,40 @@ const page = () => {
         </h2>
         <p className="rotate-90 lg:text-2xl">&rarr;</p>
       </div>
-      <div className="grid grid-cols-2 mt-[4rem] lg:mt-24">
-        <div className="flex flex-col lg:grid grid-cols-2 gap-2">
-          <div className="bg-vormgevingFemke1 bg-cover w-full h-[300px] bg-no-repeat"></div>
-          <div className="bg-vormgevingFemke2 bg-cover w-full h-[300px] bg-no-repeat"></div>
-          <div className="bg-vormgevingFemke3 bg-cover w-full h-[300px] bg-no-repeat"></div>
-          <div className="bg-vormgevingFemke4 bg-cover w-full h-[300px] bg-no-repeat"></div>
+      <div className="lg:grid grid-cols-2 flex flex-col gap-6 mt-[4rem] lg:mt-24">
+        <div className="flex">
+          <img
+            src="/images/julian3D1.svg"
+            alt="3d julian"
+            className="max-h-[600px]"
+          />
         </div>
         <div className="pl-4 lg:pl-12 flex flex-col gap-6">
           <h2 className="lg:text-3xl text-xl font-semibold">
-            Project van Femke
+            Project van Julian
           </h2>
           <p className="lg:text-xl text-md">
-            Als digital designer zit ik dagelijks het grootste gedeelte van mijn
-            tijd achter mijn beeldscherm, wat er soms voor zorgt dat ik snak
-            naar even lekker met mijn handen werken. Om die reden koos ik er
-            voor om in mijn derde blok te gaan schilderen. Ik wilde opzoek gaan
-            of ik ook handmatig mijn skills als designer kon verbeteren door
-            mijn creativiteit op een andere manier op te wekken.
+            In Sprint 1 ben ik aan de slag gegaan met Spline, dit is een 3D
+            modelleringstool die je makkelijk kunt integreren met verschillende
+            websitebouwers. Deze modellen kun je gebruiken om de ervaring op je
+            website te verbeteren en tekst te ondersteunen met visualiteit. Je
+            kunt bijvoorbeeld een 3d ontwerp maken van het product dat je
+            verkoopt en deze interactief maken. Zo kunnen gebruikers het object
+            draaien en erop inzoomen om zo het product van dichtbij te kunnen
+            zien.
           </p>
           <p className="lg:text-md text-sm">
-            Zo koos ik ervoor om te acryl verven, ik teken in mijn vrije tijd al
-            erg veel waardoor ik best al wel wat kennis heb. Schilderen was nog
-            redelijk nieuw voor mij, zo heb ik een cursus gevolgd over acryl
-            verven en heb ik onwijs veel geëxperimenteerd tijdens dit proces.
-            Ook bewerkte en paste ik mijn schilderijen digitaal toe elke week.
-            Van dit proces heb ik onwijs veel geleerd, ik heb nieuwe
-            schildertechnieken geleerd, ik heb geleerd over kleurgebruik, ik heb
-            nieuwe stijlen ontdekt en ik heb geleerd hoe ik dit digitaal als
-            designer kan gebruiken. Er zijn vooral veel patronen, achtergronden
-            en collages uitgekomen die ik als digital designer kan gebruiken.
+            Ik heb geleerd hoe ik verschillende vormen kan maken, variabelen mee
+            kan geven zodat de vormen dynamisch kunnen veranderen en hoe ik deze
+            vormen kan laten bewegen. Door het gebruik van de tool Spline heb ik
+            de basiskennis verkregen die nodig is om te kunnen 3d
+            &apos;sculpten&apos; in andere programma&apos;s zoals Blender, die
+            wat ingewikkelder en meer in your face is.
           </p>
         </div>
       </div>
       <div className="mt-12">
-        <img src="/images/paintingDamian.jpg" alt="painting image" />
+        <img src="/images/julian3D2.png" alt="julian 3d 2" />
       </div>
       <div className="lg:hidden w-full h-[2px] bg-slate-500 my-12"></div>
       <div className="mt-12 flex flex-col lg:grid lg:grid-cols-2 lg:gap-4">

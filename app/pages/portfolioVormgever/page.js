@@ -10,7 +10,7 @@ const page = () => {
   return (
     <div className="bg-black absolute px-4 lg:px-32 top-0 left-0 w-full h-full text-white">
       <NavBar />
-      <div className="absolute right-2 top-[100px] lg:top-6 bg-no-repeat bg-cover">
+      <div className="absolute right-2 top-[100px]  bg-no-repeat bg-cover">
         <img
           src="/images/vormgevingPortfolio.png"
           className="w-32 lg:w-[600px]"
@@ -105,8 +105,9 @@ const page = () => {
             bekendheid van HINT.
           </p>
         </div>
-        <div className="flex flex-col mt-4 lg:mt-0">
+        <div className="flex flex-col gap-2 mt-4 lg:mt-0">
           <img src="/images/kevinVorm1.png" alt="keving image" />
+          <img src="/images/kevinVorm2.png" alt="kevin image" />
         </div>
       </div>
       <div className="h-32"></div>
