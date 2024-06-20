@@ -36,7 +36,10 @@ export default function Home() {
         <div id="droomboom" className="flex flex-col">
           <div className="relative top-0 left-0 flex flex-col justify-end px-5 items-center w-full h-screen bg-bg-image bg-cover bg-bottom bg-no-repeat">
             <div className="absolute top-12 lg:top-0 mt-[350px] lg:mt-[200px] w-screen px-6 flex gap-6 justify-center items-center">
-              <div className="flex flex-col justify-center items-center">
+              <Link
+                href="/pages/portfolioCoder"
+                className="flex flex-col justify-center items-center"
+              >
                 <Image
                   src="/blobs/blobBlue.png"
                   width="120"
@@ -45,15 +48,13 @@ export default function Home() {
                   alt="blob"
                 />
                 <button className="lg:px-4 lg:py-2 px-2 py-1 text-[0.75rem] lg:text-[1rem] bg-white border-2 border-black rounded-full -mt-4 font-bold">
-                  <Link
-                    className="text-[0.75rem] lg:text-[1rem]"
-                    href="/pages/portfolioCoder"
-                  >
-                    {categories[1].category}
-                  </Link>
+                  {categories[1].category}
                 </button>
-              </div>
-              <div className="flex flex-col -mt-24 items-center">
+              </Link>
+              <Link
+                href="/pages/portfolioVormgever"
+                className="flex flex-col -mt-24 items-center"
+              >
                 <Image
                   src="/blobs/blobGreen.png"
                   width="120"
@@ -62,15 +63,13 @@ export default function Home() {
                   alt="blob"
                 />
                 <button className="lg:px-4 lg:py-2 px-2 py-1 text-[0.75rem] lg:text-[1rem] bg-white border-2 border-black rounded-full -mt-4 font-bold">
-                  <Link
-                    className="text-[0.75rem] lg:text-[1rem]"
-                    href="/pages/portfolioVormgever"
-                  >
-                    {categories[0].category}
-                  </Link>
+                  {categories[0].category}
                 </button>
-              </div>
-              <div className="flex flex-col -mt-24 items-center">
+              </Link>
+              <Link
+                href="/pages/portfolio3Dartist"
+                className="flex flex-col -mt-24 items-center"
+              >
                 <Image
                   src="/blobs/blobOrange.png"
                   width="120"
@@ -79,15 +78,13 @@ export default function Home() {
                   alt="blob"
                 />
                 <button className="lg:px-4 lg:py-2 px-2 py-1 text-[0.75rem] lg:text-[1rem] bg-white border-2 border-black rounded-full -mt-4 font-bold">
-                  <Link
-                    className="text-[0.75rem] lg:text-[1rem]"
-                    href="/pages/portfolio3Dartist"
-                  >
-                    {categories[2].category}
-                  </Link>
+                  {categories[2].category}
                 </button>
-              </div>
-              <div className="flex flex-col  items-center">
+              </Link>
+              <Link
+                href="pages/portfolioAnimator"
+                className="flex flex-col  items-center"
+              >
                 <Image
                   src="/blobs/blobPink.png"
                   width="120"
@@ -96,14 +93,9 @@ export default function Home() {
                   alt="blob"
                 />
                 <button className="lg:px-4 lg:py-2 px-2 py-1 text-[0.75rem] lg:text-[1rem] bg-white border-2 border-black rounded-full -mt-4 font-bold">
-                  <Link
-                    className="text-[0.75rem] lg:text-[1rem]"
-                    href="/pages/portfolioAnimator"
-                  >
-                    {categories[3].category}
-                  </Link>
+                  {categories[3].category}
                 </button>
-              </div>
+              </Link>
             </div>
             <div className="mt-[400px] flex flex-col gap-6 lg:gap-0 z-50">
               <BeginButton />

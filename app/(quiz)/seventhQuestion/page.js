@@ -53,17 +53,17 @@ const Page = () => {
     <div className="absolute top-0 left-0 flex flex-col justify-between py-12 px-4 items-center w-screen h-screen bg-black">
       <div className="absolute top-4 left-4 flex gap-4">
         <QuitButton />
-        {questionId > 0 && (
+        {/* {questionId > 0 && (
           <button
             onClick={previousQuestion}
             className="text-white border border-2 px-4 py-2"
           >
             Vorige vraag
           </button>
-        )}
+        )} */}
       </div>
 
-      <div className="mt-14 lg:mt-0 mx-5">
+      {/* <div className="mt-14 lg:mt-0 mx-5">
         <ul className="flex gap-2 lg:gap-8 mb-22 text-white">
           <li className="flex flex-col items-center text-md lg:text-xl bg-[#8BBC3F] font-semibold border border-2 rounded-xl justify-center min-w-24 px-2 py-1 lg:p-4 lg:min-w-36">
             {categories[0].category}
@@ -90,7 +90,7 @@ const Page = () => {
             </span>
           </li>
         </ul>
-      </div>
+      </div> */}
       <div className="flex flex-col justify-center">
         <h3 className="text-white text-xl lg:text-2xl font-semibold self-center mt-10 md:mt-2 lg:mb-2">
           Vraag: {questionId + 4} van 8
@@ -123,14 +123,14 @@ const Page = () => {
               className="lg:w-full h-[200px] w-full object-cover lg:h-[250px] border-2 cursor-pointer"
             ></img>
           </div>
-          {isLastQuestion() && (
+          {/* {isLastQuestion() && (
             <Link
               href="/pages/portfolioVormgever"
               className="text-black mt-4 bg-white self-center border-2 border-transparent px-4 py-2 hover:text-white hover:bg-black hover:border-white transition-all duration-200 ease-in-out"
             >
               Zie uitslag
             </Link>
-          )}
+          )} */}
         </div>
       </div>
     </div>

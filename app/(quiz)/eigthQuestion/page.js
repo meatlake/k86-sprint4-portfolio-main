@@ -14,7 +14,7 @@ const Page = () => {
   const [questionId, setQuestionId] = useState(3);
 
   function nextQuestion() {
-    window.location.href = "/ninethQuestion";
+    window.location.href = "/seventhQuestion";
   }
 
   const previousQuestion = () => {
@@ -22,7 +22,7 @@ const Page = () => {
   };
 
   const isLastQuestion = () => {
-    if (questionId === sliderQuestions.length - 1) {
+    if (questionId === quizQuestions.length - 1) {
       return true;
     }
   };
@@ -57,7 +57,7 @@ const Page = () => {
       </div>
 
       <div className="flex flex-col gap-6 items-center">
-        <div className="mt-14 lg:mt-0 mx-5">
+        {/* <div className="mt-14 lg:mt-0 mx-5">
           <ul className="flex gap-2 lg:gap-8 mb-22 text-white">
             <li className="flex flex-col items-center text-md lg:text-xl bg-[#8BBC3F] font-semibold border border-2 rounded-xl justify-center min-w-24 px-2 py-1 lg:p-4 lg:min-w-36">
               {categories[0].category}
@@ -84,7 +84,7 @@ const Page = () => {
               </span>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         <h3 className="text-white text-xl lg:text-2xl font-semibold self-center mt-10 md:mt-2 lg:mb-2">
           Vraag: {questionId + 5} van 8
@@ -112,14 +112,14 @@ const Page = () => {
               <label className="text-rigth">Eens</label>
             </div>
           </div>
-          {isLastQuestion() && (
+          <div className="px-24 lg:mt-24 flex flex-col justify-center items-center">
             <Link
+              className="border-2 rounded-full px-4 py-2 font-semibold"
               href="/pages/portfolioVormgever"
-              className="text-black mt-4 bg-white self-center border-2 border-transparent px-4 py-2 hover:text-white hover:bg-black hover:border-white transition-all duration-200 ease-in-out"
             >
-              Zie uitslag
+              Uitslag
             </Link>
-          )}
+          </div>
         </div>
       </div>
       {/* <input type="submit" value="Volgende" accessKey="enter"></input> */}

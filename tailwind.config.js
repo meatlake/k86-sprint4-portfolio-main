@@ -74,6 +74,7 @@ module.exports = {
       backgroundImage: {
         "bg-image": "url('../public/images/bg-about.svg')",
         "bg-sterren": "url('/images/Sterren.svg')",
+        "bq-quiz": "url('/images/bgQuiz.svg')",
         vormgevingFemke1: "url('/images/fruit.jpg')",
         vormgevingFemke2: "url('/images/berg.jpg')",
         vormgevingFemke3: "url('/images/kunsttt.jpg')",

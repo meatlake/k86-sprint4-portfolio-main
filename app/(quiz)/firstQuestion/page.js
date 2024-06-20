@@ -50,20 +50,20 @@ const Page = () => {
   };
 
   return (
-    <div className="absolute top-0 left-0 flex flex-col justify-between py-12 px-4 items-center w-screen h-screen bg-black">
+    <div className="absolute top-0 left-0 flex flex-col justify-between py-12 px-4 items-center w-screen h-screen">
       <div className="absolute top-4 left-4 flex gap-4">
         <QuitButton />
-        {questionId > 0 && (
+        {/* {questionId > 0 && (
           <button
             onClick={previousQuestion}
             className="text-white border border-2 px-4 py-2"
           >
             Vorige vraag
           </button>
-        )}
+        )} */}
       </div>
 
-      <div className="mt-14 lg:mt-0 mx-5">
+      {/* <div className="mt-14 lg:mt-0 mx-5">
         <ul className="flex gap-2 lg:gap-8 mb-22 text-white">
           <li className="flex flex-col items-center text-md lg:text-xl bg-[#8BBC3F] font-semibold border border-2 rounded-xl justify-center min-w-24 px-2 py-1 lg:p-4 lg:min-w-36">
             {categories[0].category}
@@ -90,7 +90,7 @@ const Page = () => {
             </span>
           </li>
         </ul>
-      </div>
+      </div> */}
       <div className="flex flex-col justify-center">
         <h3 className="text-white text-xl lg:text-2xl font-semibold self-center mt-10 md:mt-2 lg:mb-2">
           Vraag: {questionId + 1} van 8
@@ -104,25 +104,25 @@ const Page = () => {
           <div className="mt-2 grid grid-cols-2 mx-1 lg:mx-10 gap-2">
             <button
               onClick={onClickCoder}
-              className="p-5 lg:p-10 text-lg lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
+              className="p-5 lg:p-10 text-sm lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
             >
               {quizQuestions[questionId].answers[0].content}
             </button>
             <button
               onClick={onClickAnimator}
-              className="p-5 lg:p-10 text-lg lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
+              className="p-5 lg:p-10 text-sm lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
             >
               {quizQuestions[questionId].answers[1].content}
             </button>
             <button
               onClick={onClickVormgever}
-              className="p-5 lg:p-10 text-lg lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
+              className="p-5 lg:p-10 text-sm lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
             >
               {quizQuestions[questionId].answers[2].content}
             </button>
             <button
               onClick={onClickArtist}
-              className="p-5 lg:p-10 text-lg lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
+              className="p-5 lg:p-10 text-sm lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
             >
               {quizQuestions[questionId].answers[3].content}
             </button>
