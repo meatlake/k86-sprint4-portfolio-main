@@ -28,13 +28,13 @@ export default function Home() {
           muted
           className="lg:min-w-full lg:min-h-full w-auto h-auto"
         >
-          <source src="/videos/openingvid.mp4" type="video/mp4" />
+          <source src="/videos/RenderTestVideo.mp4" type="video/mp4" />
         </video>
       )}
       {videoEnded && (
         <div id="droomboom" className="flex flex-col">
           <div className="relative top-0 left-0 flex flex-col justify-end px-5 items-center w-full h-screen bg-bg-image bg-cover bg-bottom bg-no-repeat">
-            <div className="absolute top-24 lg:top-0 h-screen w-screen px-6 flex gap-2 justify-center items-center">
+            <div className="absolute top-12 lg:top-0 h-screen w-screen px-6 flex gap-6 justify-center items-center">
               <div className="flex flex-col justify-center items-center">
                 <Image
                   src="/blobs/blobBlue.png"
@@ -104,7 +104,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="mt-[300px] flex flex-col gap-6 lg:gap-0 z-50">
+            <div className="mt-[400px] flex flex-col gap-6 lg:gap-0 z-50">
               <BeginButton />
               {/* <Link
           href="/slider"
@@ -112,7 +112,7 @@ export default function Home() {
         >
           Slider
         </Link> */}
-              <div className="flex flex-col items-center lg:mt-32 lg:mb-20">
+              <div className="flex flex-col items-center lg:mt-12 mb-24 lg:mb-20">
                 <button
                   onClick={() =>
                     document

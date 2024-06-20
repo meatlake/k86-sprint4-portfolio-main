@@ -12,7 +12,7 @@ const page = () => {
       <div className="absolute right-2 top-[100px] lg:top-2 bg-no-repeat bg-cover">
         <img
           src="/images/developerPortfolio.png"
-          className="w-32 lg:w-full"
+          className="w-32 lg:w-[600px]"
           alt="developer icon"
         />
       </div>

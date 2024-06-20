@@ -2,20 +2,18 @@ import React from "react";
 import QuitButton from "@/app/components/QuitButton";
 import { portfolioInfo } from "@/app/portfolioInfo";
 import PortfolioButtons from "@/app/components/PortfolioButtons";
+import NavBar from "@/app/components/NavBar";
 
 const page = () => {
   const portfolioNumber = 1;
 
   return (
     <div className="bg-black absolute px-4 lg:px-32 top-0 left-0 w-full h-full text-white">
-      <div className="fixed top-4 left-4 flex gap-4">
-        <QuitButton />
-        <PortfolioButtons />
-      </div>
+      <NavBar />
       <div className="absolute right-2 top-[100px] lg:top-2 bg-no-repeat bg-cover">
         <img
           src="/images/3dartistPortfolio.png"
-          className="w-32 lg:w-full"
+          className="w-32 lg:w-[600px]"
           alt="3d artist icon"
         />
       </div>
@@ -84,14 +82,14 @@ const page = () => {
             Project van Kevin
           </h2>
           <p className="lg:text-xl text-md">
-            HINT is een innovatie beweging binnen de Haagse Hogeschool. Ik heb
-            mee mogen doen met een Hackaton afgelopen lente. Tijdens deze dagen
-            heb ik samen met medewerkers van de Haagse hogeschool een
-            campagneconcept bedacht. Doel van de campagne: merkbekendheid
-            vergroten. Voor mijn 3e sprint van mijn minor visual design en
-            front-end development ben ik verder gegaan met dit conceptvoorstel.
-            Ik heb een nieuwe draai aan de vormgeving gegeven, een offerte
-            opgezet en onderzoek gedaan naar de printkosten.
+            In Sprint 1 ben ik aan de slag gegaan met Spline, dit is een 3D
+            modelleringstool die je makkelijk kunt integreren met verschillende
+            websitebouwers. Deze modellen kun je gebruiken om de ervaring op je
+            website te verbeteren en tekst te ondersteunen met visualiteit. Je
+            kunt bijvoorbeeld een 3d ontwerp maken van het product dat je
+            verkoopt en deze interactief maken. Zo kunnen gebruikers het object
+            draaien en erop inzoomen om zo het product van dichtbij te kunnen
+            zien.
           </p>
           <p className="lg:text-xl text-sm">
             Het idee is een guerilla campagne. Levensgrote kaarten met daarop

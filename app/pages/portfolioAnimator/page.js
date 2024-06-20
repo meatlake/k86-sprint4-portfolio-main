@@ -2,20 +2,18 @@ import React from "react";
 import QuitButton from "@/app/components/QuitButton";
 import { portfolioInfo } from "@/app/portfolioInfo";
 import PortfolioButtons from "@/app/components/PortfolioButtons";
+import NavBar from "@/app/components/NavBar";
 
 const page = () => {
   const portfolioNumber = 2;
 
   return (
     <div className="bg-black absolute px-4 lg:px-32 top-0 left-0 w-full h-full text-white">
-      <div className="fixed top-4 left-4 flex gap-5">
-        <QuitButton />
-        <PortfolioButtons />
-      </div>
+      <NavBar />
       <div className="absolute right-2 top-[100px] lg:top-2 bg-no-repeat bg-cover">
         <img
           src="/images/animatiePortfolio.png"
-          className="w-32 lg:w-full"
+          className="w-32 lg:w-[600px]"
           alt="animator icon"
         />
       </div>
