@@ -93,7 +93,7 @@ const Page = () => {
       </div>
       <div className="flex flex-col justify-center">
         <h3 className="text-white text-xl lg:text-2xl font-semibold self-center mt-10 md:mt-2 lg:mb-2">
-          Vraag: {questionId + 1} van {quizQuestions.length}
+          Vraag: {questionId + 2} van 8
         </h3>
         <div className="flex flex-col">
           <div className="lg:p-12 p-8 flex items-center justify-center">

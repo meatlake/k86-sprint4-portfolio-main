@@ -1,25 +1,6 @@
 export const quizQuestions = [
   {
     id: 0,
-    voorbeeld: "<html lang='nl'>",
-    question: "Wat betekent de code <html lang='nl'>?",
-    answers: [
-      {
-        content: "Het geeft aan dat de website in Nederland is gemaakt.",
-      },
-      {
-        content: "Het stelt de taal van de HTML-document in op Nederlands.",
-      },
-      {
-        content: "Het stelt de taal van de browser in op Nederlands.",
-      },
-      {
-        content: "Het verandert de taal van de computer naar Nederlands.",
-      },
-    ],
-  },
-  {
-    id: 1,
     question: "Welke van de volgende beschrijvingen past het best bij jou?",
     answers: [
       {
@@ -54,6 +35,42 @@ export const quizQuestions = [
       },
       {
         content: "Timing, beweging, en visuele effecten.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    question: "Welke van deze afbeeldingen spreek jou het meeste aan?",
+    answers: [
+      {
+        content: "/images/codingImg.png",
+      },
+      {
+        content: "/images/vormgevingImg.png",
+      },
+      {
+        content: "/images/3dImg.png",
+      },
+      {
+        content: "/images/animatieImg.png",
+      },
+    ],
+  },
+  {
+    id: 3,
+    question: "Welk soort werkvorm spreekt jou het meeste aan?",
+    answers: [
+      {
+        content: "/images/codingImg2.png",
+      },
+      {
+        content: "/images/vormgevingImg2.png",
+      },
+      {
+        content: "/images/3dImg2.png",
+      },
+      {
+        content: "/images/animatieImg2.png",
       },
     ],
   },

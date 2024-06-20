@@ -1,17 +1,14 @@
 import React from "react";
-import QuitButton from "@/app/components/QuitButton";
 import { portfolioInfo } from "@/app/portfolioInfo";
 import PortfolioButtons from "@/app/components/PortfolioButtons";
+import NavBar from "@/app/components/NavBar";
 
 const page = () => {
   const portfolioNumber = 3;
 
   return (
     <div className="bg-black absolute px-4 lg:px-32 top-0 left-0 w-full h-full text-white">
-      <div className="fixed top-4 left-4 flex gap-2 lg:gap-4">
-        <QuitButton />
-        <PortfolioButtons />
-      </div>
+      <NavBar />
       <div className="absolute right-2 top-[100px] lg:top-2 bg-no-repeat bg-cover">
         <img
           src="/images/developerPortfolio.png"
@@ -41,9 +38,9 @@ const page = () => {
         </h2>
         <p className="rotate-90 lg:text-2xl">&rarr;</p>
       </div>
-      <div className="grid grid-cols-2 mt-[4rem] lg:mt-24">
+      <div className="lg:grid grid-cols-2 flex flex-col gap-6 mt-[4rem] lg:mt-24">
         <div className="flex flex-col lg:grid grid-cols-1 gap-2">
-          <div className="bg-coderJulian1 bg-contain w-[450px] h-[800px] bg-no-repeat"></div>
+          <div className="bg-coderJulian1 bg-contain w-screen h-screen lg:w-[450px] lg:h-[800px] bg-no-repeat"></div>
         </div>
         <div className="pl-4 lg:pl-12 flex flex-col gap-6">
           <h2 className="lg:text-3xl text-xl font-semibold">

@@ -13,10 +13,10 @@ const Page = () => {
   const [countArtist, setCountArtist] = useState(0);
   const [countVormgever, setCountVormgever] = useState(0);
 
-  const [questionId, setQuestionId] = useState(0);
+  const [questionId, setQuestionId] = useState(3);
 
   function nextQuestion() {
-    window.location.href = "/secondQuestion";
+    window.location.href = "/eigthQuestion";
   }
 
   const previousQuestion = () => {
@@ -93,7 +93,7 @@ const Page = () => {
       </div>
       <div className="flex flex-col justify-center">
         <h3 className="text-white text-xl lg:text-2xl font-semibold self-center mt-10 md:mt-2 lg:mb-2">
-          Vraag: {questionId + 1} van 8
+          Vraag: {questionId + 4} van 8
         </h3>
         <div className="flex flex-col">
           <div className="lg:p-12 p-8 flex items-center justify-center">
@@ -102,30 +102,26 @@ const Page = () => {
             </h1>
           </div>
           <div className="mt-2 grid grid-cols-2 mx-1 lg:mx-10 gap-2">
-            <button
+            <img
               onClick={onClickCoder}
-              className="p-5 lg:p-10 text-lg lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
-            >
-              {quizQuestions[questionId].answers[0].content}
-            </button>
-            <button
+              src={quizQuestions[questionId].answers[0].content}
+              className="lg:w-full h-[200px] w-full object-cover lg:h-[250px] border-2 cursor-pointer"
+            ></img>
+            <img
               onClick={onClickAnimator}
-              className="p-5 lg:p-10 text-lg lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
-            >
-              {quizQuestions[questionId].answers[1].content}
-            </button>
-            <button
+              src={quizQuestions[questionId].answers[1].content}
+              className="lg:w-full h-[200px] w-full object-cover lg:h-[250px] border-2 cursor-pointer"
+            ></img>
+            <img
               onClick={onClickVormgever}
-              className="p-5 lg:p-10 text-lg lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
-            >
-              {quizQuestions[questionId].answers[2].content}
-            </button>
-            <button
+              src={quizQuestions[questionId].answers[2].content}
+              className="lg:w-full h-[200px] w-full object-cover lg:h-[250px] border-2 cursor-pointer"
+            ></img>
+            <img
               onClick={onClickArtist}
-              className="p-5 lg:p-10 text-lg lg:text-2xl lg:min-w-64 lg:min-h-64 bg-black border-2 text-white hover:bg-white hover:text-black transition-colors duration-200 ease-in-out font-medium"
-            >
-              {quizQuestions[questionId].answers[3].content}
-            </button>
+              src={quizQuestions[questionId].answers[3].content}
+              className="lg:w-full h-[200px] w-full object-cover lg:h-[250px] border-2 cursor-pointer"
+            ></img>
           </div>
           {isLastQuestion() && (
             <Link

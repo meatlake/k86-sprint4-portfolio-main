@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import QuitButton from "@/app/components/QuitButton";
 import { sliderQuestions } from "@/app/sliderQuestions";
 import { categories } from "@/app/categories";
+import Link from "next/link";
 
 const Page = () => {
   const [countCoder, setCountCoder] = useState(0);
@@ -10,10 +11,10 @@ const Page = () => {
   const [countArtist, setCountArtist] = useState(0);
   const [countVormgever, setCountVormgever] = useState(0);
 
-  const [questionId, setQuestionId] = useState(0);
+  const [questionId, setQuestionId] = useState(3);
 
   function nextQuestion() {
-    window.location.href = "/thirdQuestion";
+    window.location.href = "/ninethQuestion";
   }
 
   const previousQuestion = () => {
@@ -21,7 +22,7 @@ const Page = () => {
   };
 
   const isLastQuestion = () => {
-    if (questionId === quizQuestions.length - 1) {
+    if (questionId === sliderQuestions.length - 1) {
       return true;
     }
   };
@@ -86,12 +87,12 @@ const Page = () => {
         </div>
 
         <h3 className="text-white text-xl lg:text-2xl font-semibold self-center mt-10 md:mt-2 lg:mb-2">
-          Vraag: {questionId + 2} van 8
+          Vraag: {questionId + 5} van 8
         </h3>
 
         <label for="slider">
           <h1 className="text-center font-semibold text-xl">
-            {sliderQuestions[0].question}
+            {sliderQuestions[questionId].question}
           </h1>
         </label>
 
@@ -111,16 +112,14 @@ const Page = () => {
               <label className="text-rigth">Eens</label>
             </div>
           </div>
-          <div className="px-24 lg:mt-24 flex flex-col justify-center items-center">
-            <button
-              className="font-semibold text-xl border-2 rounded-full px-4 py-2 text-black hover:text-white bg-white hover:bg-black transition-all duration-200 ease-in-out"
-              type="submit"
-              value="Volgende"
-              onClick={onClickValue}
+          {isLastQuestion() && (
+            <Link
+              href="/pages/portfolioVormgever"
+              className="text-black mt-4 bg-white self-center border-2 border-transparent px-4 py-2 hover:text-white hover:bg-black hover:border-white transition-all duration-200 ease-in-out"
             >
-              Volgende
-            </button>
-          </div>
+              Zie uitslag
+            </Link>
+          )}
         </div>
       </div>
       {/* <input type="submit" value="Volgende" accessKey="enter"></input> */}

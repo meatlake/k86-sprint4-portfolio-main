@@ -10,10 +10,10 @@ const Page = () => {
   const [countArtist, setCountArtist] = useState(0);
   const [countVormgever, setCountVormgever] = useState(0);
 
-  const [questionId, setQuestionId] = useState(0);
+  const [questionId, setQuestionId] = useState(1);
 
   function nextQuestion() {
-    window.location.href = "/thirdQuestion";
+    window.location.href = "/fifthQuestion";
   }
 
   const previousQuestion = () => {
@@ -86,12 +86,12 @@ const Page = () => {
         </div>
 
         <h3 className="text-white text-xl lg:text-2xl font-semibold self-center mt-10 md:mt-2 lg:mb-2">
-          Vraag: {questionId + 2} van 8
+          Vraag: {questionId + 3} van 8
         </h3>
 
         <label for="slider">
           <h1 className="text-center font-semibold text-xl">
-            {sliderQuestions[0].question}
+            {sliderQuestions[questionId].question}
           </h1>
         </label>
 
