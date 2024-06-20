@@ -35,7 +35,7 @@ export default function Home() {
       {videoEnded && (
         <div id="droomboom" className="flex flex-col">
           <div className="relative top-0 left-0 flex flex-col justify-end px-5 items-center w-full h-screen bg-bg-image bg-cover bg-bottom bg-no-repeat">
-            <div className="absolute top-12 lg:top-0 h-screen w-screen px-6 flex gap-6 justify-center items-center">
+            <div className="absolute top-12 lg:top-0 mt-[350px] lg:mt-[200px] w-screen px-6 flex gap-6 justify-center items-center">
               <div className="flex flex-col justify-center items-center">
                 <Image
                   src="/blobs/blobBlue.png"
@@ -53,7 +53,7 @@ export default function Home() {
                   </Link>
                 </button>
               </div>
-              <div className="flex flex-col  items-center">
+              <div className="flex flex-col -mt-24 items-center">
                 <Image
                   src="/blobs/blobGreen.png"
                   width="120"
@@ -70,7 +70,7 @@ export default function Home() {
                   </Link>
                 </button>
               </div>
-              <div className="flex flex-col  items-center">
+              <div className="flex flex-col -mt-24 items-center">
                 <Image
                   src="/blobs/blobOrange.png"
                   width="120"
@@ -107,15 +107,7 @@ export default function Home() {
             </div>
             <div className="mt-[400px] flex flex-col gap-6 lg:gap-0 z-50">
               <BeginButton />
-              <button
-                className="text-black font-bold flex items-center mt-4 gap-2 text-center mx-auto"
-                onClick={() => location.reload()}
-              >
-                Speel de video opnieuw af!
-                <span>
-                  <img className="w-[20px]" src="/images/reload.svg" />
-                </span>
-              </button>
+
               {/* <Link
           href="/slider"
           className="mt-4 text-2xl min-w-[250px] text-center text-black bg-white font-semibold rounded-lg lg:px-4 lg:py-2 px-2 py-1 text-sm hover:bg-black hover:text-white transition-all duration-200 ease-in-out"
@@ -226,6 +218,15 @@ export default function Home() {
                   <h2 className="font-semibold text-2xl border-2 px-4 py-2 rounded-full border-black">
                     Terug naar boven
                   </h2>
+                </button>
+                <button
+                  className="text-black font-bold flex items-center mt-4 gap-2 text-center mx-auto"
+                  onClick={() => location.reload()}
+                >
+                  Speel de video opnieuw af!
+                  <span>
+                    <img className="w-[20px]" src="/images/reload.svg" />
+                  </span>
                 </button>
               </div>
             </div>
