@@ -22,14 +22,15 @@ export default function Home() {
   return (
     <div>
       {!videoEnded && (
-        <video
-          id="introVideo"
-          autoPlay
-          muted
-          className="lg:min-w-full lg:min-h-full w-auto h-auto"
-        >
-          <source src="/videos/RenderTestVideo.mp4" type="video/mp4" />
-        </video>
+        <div>
+          <video
+            id="introVideo"
+            controls
+            className="lg:min-w-full lg:min-h-full w-auto h-auto"
+          >
+            <source src="/videos/RenderTestVideo.mp4" type="video/mp4" />
+          </video>
+        </div>
       )}
       {videoEnded && (
         <div id="droomboom" className="flex flex-col">
@@ -106,6 +107,15 @@ export default function Home() {
             </div>
             <div className="mt-[400px] flex flex-col gap-6 lg:gap-0 z-50">
               <BeginButton />
+              <button
+                className="text-black font-bold flex items-center mt-4 gap-2 text-center mx-auto"
+                onClick={() => location.reload()}
+              >
+                Speel de video opnieuw af!
+                <span>
+                  <img className="w-[20px]" src="/images/reload.svg" />
+                </span>
+              </button>
               {/* <Link
           href="/slider"
           className="mt-4 text-2xl min-w-[250px] text-center text-black bg-white font-semibold rounded-lg lg:px-4 lg:py-2 px-2 py-1 text-sm hover:bg-black hover:text-white transition-all duration-200 ease-in-out"

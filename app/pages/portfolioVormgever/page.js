@@ -105,7 +105,7 @@ const page = () => {
             bekendheid van HINT.
           </p>
         </div>
-        <div className="mt-4 lg:mt-0">
+        <div className="flex flex-col mt-4 lg:mt-0">
           <img src="/images/kevinVorm1.png" alt="keving image" />
         </div>
       </div>
