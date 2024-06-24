@@ -37,7 +37,7 @@ export default function Home() {
           <div className="relative top-0 left-0 flex flex-col justify-end px-5 items-center w-full h-screen bg-bg-image bg-cover bg-bottom bg-no-repeat">
             <div className="absolute top-12 lg:top-0 mt-[350px] lg:mt-[200px] w-screen px-6 flex gap-6 justify-center items-center">
               <Link
-                href="/pages/portfolioCoder"
+                href="/pages/Coder"
                 className="flex flex-col justify-center items-center"
               >
                 <Image
@@ -52,7 +52,7 @@ export default function Home() {
                 </button>
               </Link>
               <Link
-                href="/pages/portfolioVormgever"
+                href="/pages/Vormgever"
                 className="flex flex-col -mt-24 items-center"
               >
                 <Image
@@ -67,7 +67,7 @@ export default function Home() {
                 </button>
               </Link>
               <Link
-                href="/pages/portfolio3Dartist"
+                href="/pages/3DArtiest"
                 className="flex flex-col -mt-24 items-center"
               >
                 <Image
@@ -82,7 +82,7 @@ export default function Home() {
                 </button>
               </Link>
               <Link
-                href="pages/portfolioAnimator"
+                href="pages/Animator"
                 className="flex flex-col  items-center"
               >
                 <Image
